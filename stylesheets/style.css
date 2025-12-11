@@ -1,19 +1,63 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html {
+  display:flex;
+  justify-content: center;
+  overflow-x: hidden;
+  align-items: center;
 
 }
-.main {
-    background-color: #CCE8E6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /*The default height should be 100% of view port*/
-}
-nav {
+.header {
+  top: 0;
   position: sticky;
-  bottom: 0;
 }
-p {
-  font-size: 100;
+body {
+  
+  overflow-x: hidden;
+  height: 812px;
+  width: 375px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: #f3f3f3;
+}
+.nav span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25;
+  margin: 20px;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #bfbfbf;
+  
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-btn {
+  border: 0;
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #bfbfbf;
+  
+  
+
+  
+}
+.nav button {
+  
+}
+.drop-btn {
+    display: none;
+  background-color: #ebebeb;
+  padding: 19px;
+  font-size: 25;
+}
+
+.content {
+ height: 300px;
+  
+
 }
