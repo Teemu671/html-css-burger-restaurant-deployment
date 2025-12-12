@@ -5,31 +5,205 @@
     <title>Yum Burgers</title>
     <link rel="icon" type="image/png" href="images/icons8-hamburger-96.png">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="index.js"></script>
 </head>
     <body>
         <div class="container">
             <div class="header">
                 
                 <div class="nav">
-                    <span>YUM</span>
-                    <button class="nav-btn">
-                        <img src="svg/menu.svg" alt="" style="height: 25px;">
-                    </button>
-                    
-                </div>
-                <div class="cart drop-btn">
-                    <span>Cart</span>
+                    <a class="nav-btn" href="javascript:void(0);" onclick="menu()">
+                            <img src="svg/menu.svg" alt="" style="height: 25px;">
+                        </a>
+                    <div class="nav-section">
+                        <span class="text">YUM🍔</span>
+
+                    </div>
+                    <a class="cart-btn" href="javascript:void(0);" onclick="cart()">
+                        <img src="svg/shopping-cart.svg" alt="" style="height: 35px;">
+                    </a>
 
                 </div>
-                <div class="menu drop-btn">
-                    <span>Menu</span>
+                <div id="menu">
+                    
+                    
+                        <div class="drop-btn">
+                            <a href="index.html"><span class="text">Menu</span></a>
+                        
+                        </div>
+                        <div class="drop-btn">
+                            <a href="about.html"><span class="text">About us</span></a>
+                            
+                        </div>
+                        
+                    
+                    
                     
                 </div>
-                
                 
             </div>
             <div class="content">
+                <div class="title-container"><span class="text">What would like today?</span></div>
                 
+                <div class="products-grid">
+                    <div class="product-row">
+                        <a href="#burger">
+                        <div style="background-color: #F06060;" class="product">
+                            <img src="images/burgers.jpg" alt="">
+                            <span class="text">Burgers</span>
+                        </div>
+                        </a>
+                        <a href="#side">
+                        <div class="product">
+                            <img src="images/fries.jpg" alt="">
+                            <span class="text">Sides</span>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-row">
+                        <a href="#dessert">
+                        <div style="background-color: #fcb4b4;" class="product">
+                            <img src="images/icecream.jpg" alt="">
+                            <span class="text">Desserts</span>
+                        </div>
+                        </a>
+                        <a href="#drink">
+                        <div style="background-color: #8CBEB2;" class="product">
+                            <img src="images/drinks.jpg" alt="">
+                            <span class="text">Drinks</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="title-container" id="burger"><span class="text">Burgers</span></div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px; height: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Cheese Burger</span> 
+                                <br>
+                                <span class="text">2 smash patties, cheese, buns, mayonaise, ketchup.</span>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-item">
+                            
+                            <img src="images/veganburger.jpg" style="width: 80px;  height: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Vegan Burger</span> 
+                                <br>
+                                <span class="text">Soy patty, vegan cheese, vegan buns, vegan mayonaise.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="title-container" id="side"><span class="text">Sides</span></div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Fries</span> 
+                                <br>
+                                <span class="text">Fries</span>
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="title-container" id="dessert"><span class="text">Desserts</span></div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Ice Cream</span> 
+                                <br>
+                                <span class="text">Ice Cream</span>
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="title-container" id="drink"><span class="text">Drinks</span></div>
+                <div class="item-list">
+                    
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Cola 33cl</span> 
+                                <br>
+                                <span class="text">Cola 33cl</span>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Fanta 33cl</span> 
+                                <br>
+                                <span class="text">Fanta 33cl</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Muumi 0.5l</span> 
+                                <br>
+                                <span class="text">Muumi 0.5l</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Cola 1.5l</span> 
+                                <br>
+                                <span class="text">Cola 1.5l</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Fanta 1.5l</span> 
+                                <br>
+                                <span class="text">Fanta 1.5l</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-item">
+                            <img src="images/burger1.jpg" style="width: 80px;" alt="">
+                            
+                        </div>
+                        <div class="inner-item-desc">
+                                <span style="font-size: 20;" class="text">Sprite 1.5l</span> 
+                                <br>
+                                <span class="text">Sprite 1.5l</span>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
 
         </div>
