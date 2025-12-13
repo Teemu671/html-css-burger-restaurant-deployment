@@ -92,7 +92,7 @@ body {
   
 }
 
-.drop-btn a:any-link{
+#menu a:any-link{
   color: #F2EBBF;
   text-decoration: none;
 }
