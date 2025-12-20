@@ -1,6 +1,8 @@
 # Burger Website Example
 
 This website was a mandatory project for my education.
+It has working dropdown menu and button can be pressed.
+Everything else, such as cart, ordering, adding and removing items, processing are not functional.
 
 ## Usage
 
